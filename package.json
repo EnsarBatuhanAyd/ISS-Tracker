@@ -1,13 +1,15 @@
 {
   "name": "tracker-iss",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
- 
+  "homepage": "https://ensarbatuhanayd.github.io/isstracker ",
   "scripts": {
+    "predeploy" :"npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "preview": "vite preview"
+ 
   },
   "dependencies": {
     "cesium": "^1.93.0",
@@ -19,6 +21,7 @@
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^1.3.0",
+    "gh-pages": "^4.0.0",
     "vite": "^2.9.7",
     "vite-plugin-cesium": "^1.2.18"
   }
