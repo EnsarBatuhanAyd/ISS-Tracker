@@ -4,7 +4,7 @@ import cesium from 'vite-plugin-cesium';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://ensarbatuhanayd.github.io/isstracker/',
+  base: '/isstracker/',
   plugins: [reactRefresh(), cesium()]
   
 })
